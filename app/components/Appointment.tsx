@@ -14,7 +14,7 @@ export default function AppointmentSection() {
               />APPOINTMENT</h2>
           <h2 className="text-4xl font-bold text-gray-800 mb-4 pt-6">Wanna Book An Appointment</h2>
           <p className="text-gray-600 mb-6">
-            At Impact Disability Support Service, we're here to help you every step of the way. 
+            At Impact Disability Support Service, we&apos;re here to help you every step of the way. 
             Making an appointment is simple and easy.
           </p>
 
@@ -26,7 +26,7 @@ export default function AppointmentSection() {
               </div>
               <div className="ml-4">
                 <h3 className="text-lg font-semibold text-gray-800">Initial Contact</h3>
-                <p className="text-gray-500">Reach out via phone or our website's contact form.</p>
+                <p className="text-gray-500">Reach out via phone or our website&apos;s contact form.</p>
               </div>
             </div>
 
@@ -36,7 +36,7 @@ export default function AppointmentSection() {
               </div>
               <div className="ml-4">
                 <h3 className="text-lg font-semibold text-gray-800">Appointment Schedule</h3>
-                <p className="text-gray-500">We'll coordinate your availability and schedule the appointment.</p>
+                <p className="text-gray-500">We&apos;ll coordinate your availability and schedule the appointment.</p>
               </div>
             </div>
 
