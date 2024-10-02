@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <section className="relative py-20 lg:max-w-[1440px] lg:max-h-[604px] max-w-[430px] max-h-[680px]">
-      <div className="container lg:mx-36 mx-[20px] flex flex-col lg:flex-row items-center lg:justify-between text-gray-800">
+    <section className="py-20 lg:max-w-[1440px] lg:max-h-[604px] max-w-[430px] max-h-[680px]">
+      <div className="container lg:mx-[120px] mx-[20px] flex flex-col lg:flex-row items-center lg:justify-between text-gray-800">
         <div className="lg:mb-40 lg:max-w-[500px]">
           <h2 className="lg:text-[51px] text-[24px] font-bold">Your Partner at Disability</h2>
           <p className="mt-4 lg:text-[20px] text-[16px]">
