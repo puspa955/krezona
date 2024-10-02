@@ -1,32 +1,76 @@
+"use client";
 import Link from 'next/link';
+import React, { useState } from 'react';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
-export default function Header() {
+const Navbar: React.FC = () => {
+  const [nav, setNav] = useState<boolean>(false);
+  
+
+  const handleNav = (): void => {
+    setNav(!nav);
+  };
+
+  
   return (
-    <header className="bg-white shadow z-50 sticky top-0">
-      <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <h1 className="text-[40px] text-[#3D3D4E] font-extrabold">LOGO</h1>
-        <nav>
-          <ul className="flex space-x-8 text-[#3D3D4E] items-center">
-            <li className='min-w-[100px]'> {/* Set a min-width */}
-              <Link href="/" className="transition-all duration-300 hover:font-bold">Home</Link>
+    <div
+      className='bg-white fixed left-0 top-0 w-full z-10 ease-in duration-300 border'
+    >
+      <div className='max-w-[1440px] max-h-[99px] m-auto flex justify-between items-center text-[#3D3D4E]'>
+        <Link href='/'>
+          <h1 className='font-bold text-4xl px-5'>
+          LOGO
+          </h1>
+        </Link>
+        <ul className='hidden sm:flex'>
+          <li className='p-4  hover:text-blue-500'>
+            <Link href='/'>Home</Link>
+          </li>
+          <li className='p-4  hover:text-blue-500'>
+            <Link href='/#about'>About</Link>
+          </li>
+          <li className='p-4  hover:text-blue-500'>
+            <Link href='/#services'>Services</Link>
+          </li>
+          <li className='p-4  hover:text-blue-500'>
+            <Link href='/#help'>Help</Link>
+          </li>
+        </ul>
+
+        {/* Mobile Button */}
+        <div onClick={handleNav} className='block sm:hidden z-10'>
+          {nav ? (
+            <AiOutlineClose size={20}/>
+          ) : (
+            <AiOutlineMenu size={20}  />
+          )}
+        </div>
+        {/* Mobile Menu */}
+        <div
+          className={
+            nav
+              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+          }
+        >
+          <ul>
+            <li onClick={handleNav} className='p-4 text-xl hover:text-blue-500'>
+              <Link href='/'>Home</Link>
             </li>
-            <li className='min-w-[100px]'>
-              <Link href="/services" className="transition-all duration-300 hover:font-bold ">Services</Link>
+            <li onClick={handleNav} className='p-4 text-xl hover:text-blue-500'>
+              <Link href='/#about'>About</Link>
             </li>
-            <li className='min-w-[100px]'>
-              <Link href="/about" className="transition-all duration-300 hover:font-bold ">About</Link>
+            <li onClick={handleNav} className='p-4 text-xl hover:text-blue-500'>
+              <Link href='/services'>Services</Link>
             </li>
-            <li className='min-w-[100px]'>
-              <Link href="/referral" className="transition-all duration-300 hover:font-bold ">Referral</Link>
-            </li>
-            <li>
-              <button className="px-6 py-2 bg-[#3D3D4E] text-white rounded-md">
-                Book an Appointment
-              </button>
+            <li onClick={handleNav} className='p-4 text-xl hover:text-blue-500'>
+              <Link href='/help'>Help</Link>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </header>
+    </div>
   );
-}
+};
+
+export default Navbar;
