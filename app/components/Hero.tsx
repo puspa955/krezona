@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative py-20">
+    <section className="relative py-20 max-w-[1440px]">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-gray-800">
         <div className="w-full mb-60">
           <h2 className="text-6xl font-bold">Your Partner at <br/> Disability</h2>
