@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
     <div
       className='bg-white fixed left-0 top-0 w-full z-10 ease-in duration-300 border'
     >
-      <div className='max-w-[1440px] max-h-[99px] lg:mx-36 flex justify-between items-center text-[#3D3D4E]'>
+      <div className='max-w-[1440px] max-h-[99px] lg:mx-36 mx-5 flex justify-between items-center text-[#3D3D4E]'>
         <Link href='/'>
           <h1 className='font-extrabold text-4xl'>
           LOGO
@@ -27,13 +27,13 @@ const Navbar: React.FC = () => {
             <Link href='/'>Home</Link>
           </li>
           <li className='p-4  hover:font-bold lg:max-w-[80px]'>
-            <Link href='/#about'>Services</Link>
+            <Link href='/#services'>Services</Link>
           </li>
           <li className='p-4  hover:font-bold lg:max-w-[80px]'>
-            <Link href='/#services'>Referral</Link>
+            <Link href='/#refer'>Referral</Link>
           </li>
           <li className='p-4  hover:font-bold lg:max-w-[80px]'>
-            <Link href='/#help'>About</Link>
+            <Link href='/#intro'>About</Link>
           </li>
           <button className="px-6 py-2  bg-[#3D3D4E] text-white rounded-md">
             Book an Appointment
@@ -61,13 +61,13 @@ const Navbar: React.FC = () => {
               <Link href='/'>Home</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-xl hover:font-bold lg:max-w-[80px]'>
-              <Link href='/#about'>About</Link>
+              <Link href='/#services'>Services</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-xl hover:font-bold lg:max-w-[80px]'>
-              <Link href='/services'>Services</Link>
+              <Link href='/#refer'>Referral</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-xl hover:font-bold lg:max-w-[80px]'>
-              <Link href='/help'>Help</Link>
+              <Link href='/#intro'>About</Link>
             </li>
             <button className="mt-6 px-6 py-2 bg-[#3D3D4E] text-white rounded-md">
             Book an Appointment

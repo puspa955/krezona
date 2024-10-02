@@ -19,14 +19,37 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main className='bg-[#FFFFFF]'>
+       <section id="">
         <Hero />
+       </section> 
+
+       <section id="intro">
         <Introduction />
+       </section>
+
+        <section id="services">
         <Services />
+       </section>
+
+        <section id="test">
         <Test />
+       </section>
+
+        <section id="appoin">
         <Appointment />
+       </section>
+
+        <section id="blogs">
         <Blogs />
+       </section>
+
+        <section id="refer">
         <Refer />
+       </section>
+
+        <section id="footer">
         <Footer />
+       </section>
 
       </main>
     </div>
