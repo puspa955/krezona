@@ -5,27 +5,27 @@ import { IoCheckmarkCircle } from "react-icons/io5";
 
 export default function Check() {
   return (
-    <div className='text-gray-800 flex items-center justify-center flex-col relative pb-20 lg:px-4'>
-      <div className="grid lg:grid-cols-3 gap-8 lg:px-36">
+    <div className='lg:max-w-[1440px] lg:max-h-[1000px] lg:mx-[120px] max-w-[430px] mx-[20px] text-gray-800 flex items-center justify-center flex-col'>
+      <div className="grid lg:grid-cols-3 gap-8 lg:mt-40">
         
         {/* First Grid - Content */}
         <div className="flex flex-col gap-4">
-          <h2 className="text-[35px] font-semibold mt-14">Empowering Independence, Together</h2>
-          <p className="text-[24px] text-gray-800">
+          <h2 className="lg:text-[35px] text-[24px] font-semibold mt-16">Empowering Independence, Together</h2>
+          <p className="lg:text-[24px] text-[16px] text-gray-800 ">
             Impact care seeks to provide good quality services for people with disabilities.
           </p>
           
-          <p className='flex items-center gap-2 pt-4 text-[25px] text-gray-800 font-bold'>
-            <IoCheckmarkCircle className='text-[#3D3D4E] size-7' />15+ Years of excellence
+          <p className='flex items-center gap-2 pt-4 lg:text-[25px] text-[16px] text-gray-800 font-bold'>
+            <IoCheckmarkCircle className='text-[#3D3D4E] lg:size-7 size-5' />15+ Years of excellence
           </p>
-          <p className='flex items-center gap-2 pt-3 text-[25px] text-gray-800 font-bold'>
-            <IoCheckmarkCircle className='text-[#3D3D4E] size-7' />A Multispeciality hospital
+          <p className='flex items-center gap-2 pt-3 lg:text-[25px] text-[16px] text-gray-800 font-bold'>
+            <IoCheckmarkCircle className='text-[#3D3D4E] lg:size-7 size-5' />A Multispeciality hospital
           </p>
-          <p className='flex items-center gap-2 pt-3 text-[25px] text-gray-800 font-bold'>
-            <IoCheckmarkCircle className='text-[#3D3D4E] size-7' />24/7 Hour Medical Service
+          <p className='flex items-center gap-2 pt-3 lg:text-[25px] text-[16px] text-gray-800 font-bold'>
+            <IoCheckmarkCircle className='text-[#3D3D4E] lg:size-7 size-5' />24/7 Hour Medical Service
           </p>
-          <p className='flex items-center gap-2 pt-3 text-[25px] text-gray-800 font-bold'>
-            <IoCheckmarkCircle className='text-[#3D3D4E] size-7' />A team of professionals
+          <p className='flex items-center gap-2 pt-3 lg:text-[25px] text-[16px] text-gray-800 font-bold'>
+            <IoCheckmarkCircle className='text-[#3D3D4E] lg:size-7 size-5' />A team of professionals
           </p>
           
         </div>
@@ -41,19 +41,19 @@ export default function Check() {
             className="hidden lg:block rounded-full"
           />
           <Image 
-            height={200} 
-            width={330} 
+            height={145} 
+            width={248} 
             src={intro} 
             loading="eager" 
             alt="Intro Image" 
-            className="lg:hidden"
+            className="lg:hidden rounded-full"
           />
         </div>
 
         {/* Third Grid - Same Content as First */}
-        <div className="flex flex-col gap-4 mt-28">
+        <div className="flex flex-col gap-4">
          
-          <p className="text-[24px] text-gray-800">
+          <p className="lg:text-[24px] text-[16px] text-gray-800 lg:mt-40">
             Impact care seeks to provide good quality services for people with disabilities.
           </p>
           

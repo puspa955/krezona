@@ -1,11 +1,11 @@
 export default function Hero() {
   return (
-    <section className="relative py-20 lg:max-w-[1440px] lg:max-h-[604px] max-w-[430px] max-h-[550px]">
-      <div className="container lg:mx-36 mx-[16px] flex flex-col lg:flex-row  items-center lg:justify-between text-gray-800">
+    <section className="relative py-20 lg:max-w-[1440px] lg:max-h-[604px] max-w-[430px] max-h-[680px]">
+      <div className="container lg:mx-36 mx-[20px] flex flex-col lg:flex-row items-center lg:justify-between text-gray-800">
         <div className="lg:mb-40 lg:max-w-[500px]">
           <h2 className="lg:text-[51px] text-[24px] font-bold">Your Partner at Disability</h2>
-          <p className="mt-4 lg:text-[20px] text-[16px] ">
-            Impact care seeks to provide good quality services for people with disabilities, ensuring that their individual<br/> requirements are met.
+          <p className="mt-4 lg:text-[20px] text-[16px]">
+            Impact care seeks to provide good quality services for people with disabilities, ensuring that their individual<br /> requirements are met.
           </p>
           <button className="mt-6 px-6 py-2 bg-[#3D3D4E] text-white rounded-md">
             Book an Appointment
@@ -13,7 +13,7 @@ export default function Hero() {
         </div>
 
         {/* Right Image Grid */}
-        <div className="relative lg:mt-10 mt-10">
+        <div className="flex justify-center lg:justify-start items-center lg:mt-10 mt-10">
           <div className="relative lg:w-[554px] lg:h-[554px] w-[340px] h-[340px]">
             {/* Create a circular image layout */}
             <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-2">
@@ -26,7 +26,7 @@ export default function Hero() {
               <div className="relative w-full h-full object-cover rounded-tr-full bg-[#3970AF]">
                 {/* The smaller shape positioned on top of the blue background */}
                 <div className="absolute lg:top-0.5 lg:right-26 top-9 transform translate-y-1/2 lg:w-36 lg:h-36 w-[80px] h-[80px] bg-[#FCC97A] rounded-tr-full">
-                {/* Optionally add content inside the smaller shape */}
+                  {/* Optionally add content inside the smaller shape */}
                 </div>
               </div>
               
@@ -48,8 +48,6 @@ export default function Hero() {
                 {/* Optionally, add inner content */}
               </div>
             </div>
-
-            {/* The circular border */}
           </div>
         </div>
       </div>
