@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
     <div
       className='bg-white fixed left-0 top-0 w-full z-10 ease-in duration-300 border'
     >
-      <div className='lg:max-w-[1440px] lg:max-h-[99px] lg:mx-36 max-w-[430px] mx-[16px] flex justify-between items-center text-[#3D3D4E]'>
+      <div className='lg:max-w-[1440px] lg:max-h-[99px] lg:mx-[120px] max-w-[430px] mx-[16px] flex justify-between items-center text-[#3D3D4E]'>
         <Link href='/'>
           <h1 className='font-extrabold text-4xl'>
           LOGO
